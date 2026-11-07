@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>2048 SuperHeels — puzle de fichas de zapatos</title>
+  <meta name="description" content="Juega a 2048 SuperHeels: une zapatos iguales, sube de la bailarina azul a la mula de plataforma arcoíris y evita que el tablero se llene.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-SUPERHEELS/es/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-SUPERHEELS/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-SUPERHEELS/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-SUPERHEELS/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 SuperHeels — puzle de fichas de zapatos">
+  <meta property="og:description" content="Juega a 2048 SuperHeels: une zapatos iguales, sube de la bailarina azul a la mula de plataforma arcoíris y evita que el tablero se llene.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-SUPERHEELS/es/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link href="../style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 SuperHeels",
+    "inLanguage": "es",
+    "url": "https://tile2048.github.io/2048-SUPERHEELS/es/",
+    "description": "Versión zapatera del puzle de fichas 2048: une pares iguales para subir de la bailarina azul a la mula de plataforma arcoíris."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><a href="../" hreflang="en" lang="en">English</a> <span>Español</span></nav>
+
+    <div class="heading">
+      <div class="title-container">
+        <h1 class="title">2048 <small>SuperHeels</small></h1>
+      </div>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">¡Únete a los <strong>SuperHeels!</strong></p>
+      <a class="restart-button">Nueva partida</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Continuar</a>
+          <a class="retry-button">Reintentar</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">Cómo jugar:</strong> usa las <strong>teclas de flecha</strong> para mover las fichas. Cuando dos zapatos se tocan, ¡<strong>mejoran!</strong>
+    </p>
+    <p class="game-about">
+      Una bailarina azul abre el estante en el 2 y una mula de plataforma arcoíris lo cierra en el 2048. Entre medias: una sandalia verde con tobillera, un tacón bordado fucsia, un tacón amarillo con plataforma, un tacón estampado leopardo, una sandalia negra de charol, un tacón de lunares, una sandalia azul de tiras, un botín verde con purpurina y un tacón de pata de gallo. Desliza la estantería de 4×4 con las flechas o el dedo; dos pares idénticos se convierten en el modelo siguiente y suman puntos. Deja casillas libres y piensa por delante, porque un tablero lleno sin parejas termina la compra. La mula arcoíris es el par que hay que alcanzar.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Leyenda de fichas:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="../style/img/2.jpg" alt="bailarina azul"></div></div>
+        <p>bailarina azul</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="../style/img/4.jpg" alt="sandalia verde con tobillera"></div></div>
+        <p>sandalia verde con tobillera</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="../style/img/8.jpg" alt="tacón bordado fucsia"></div></div>
+        <p>tacón bordado fucsia</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="../style/img/16.jpg" alt="tacón amarillo con plataforma"></div></div>
+        <p>tacón amarillo con plataforma</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="../style/img/32.jpg" alt="tacón estampado leopardo"></div></div>
+        <p>tacón estampado leopardo</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="../style/img/64.jpg" alt="sandalia negra de charol"></div></div>
+        <p>sandalia negra de charol</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="../style/img/128.jpg" alt="tacón de lunares"></div></div>
+        <p>tacón de lunares</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="../style/img/256.jpg" alt="sandalia azul de tiras"></div></div>
+        <p>sandalia azul de tiras</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="../style/img/512.jpg" alt="botín verde con purpurina"></div></div>
+        <p>botín verde con purpurina</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="../style/img/1024.jpg" alt="tacón de pata de gallo"></div></div>
+        <p>tacón de pata de gallo</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="../style/img/2048.jpg" alt="mula de plataforma arcoíris"></div></div>
+        <p>mula de plataforma arcoíris</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Nota:</strong> Una variante creada por aficionados de 2048, el juego original de Gabriele Cirulli.
+    </p>
+    <hr>
+    <p class="credits">
+      Imágenes de zapatos por <a href="http://www.heels.com/" title="Women's Shoes, Dress Shoes, High Heels, Women's Boots, Evening Shoes, Heels.com">Heels.com</a>.
+    </p>
+  </div>
+
+  <script src="../js/bind_polyfill.js"></script>
+  <script src="../js/classlist_polyfill.js"></script>
+  <script src="../js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The English page sits at the repo root.
+    window.GAME_ROOT = "../";
+
+    // Text that only appears once a game is running, in the language of this page.
+    // Names are written in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "¡Ganaste!",
+      "game-over": "¡Fin del juego!",
+      "tweet1": "Conseguí \"",
+      "tweet2": "\" en 2048-SuperHeels #2048game",
+      "2": "bailarina azul",
+      "4": "sandalia verde con tobillera",
+      "8": "tacón bordado fucsia",
+      "16": "tacón amarillo con plataforma",
+      "32": "tacón estampado leopardo",
+      "64": "sandalia negra de charol",
+      "128": "tacón de lunares",
+      "256": "sandalia azul de tiras",
+      "512": "botín verde con purpurina",
+      "1024": "tacón de pata de gallo",
+      "2048": "mula de plataforma arcoíris",
+      "p0": "bailarina azul",
+      "p2": "bailarina azul",
+      "p4": "sandalia verde con tobillera",
+      "p8": "tacón bordado fucsia",
+      "p16": "tacón amarillo con plataforma",
+      "p32": "tacón estampado leopardo",
+      "p64": "sandalia negra de charol",
+      "p128": "tacón de lunares",
+      "p256": "sandalia azul de tiras",
+      "p512": "botín verde con purpurina",
+      "p1024": "tacón de pata de gallo",
+      "p2048": "mula de plataforma arcoíris"
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "p" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="../js/keyboard_input_manager.js"></script>
+  <script src="../js/html_actuator.js"></script>
+  <script src="../js/grid.js"></script>
+  <script src="../js/tile.js"></script>
+  <script src="../js/local_storage_manager.js"></script>
+  <script src="../js/game_manager.js"></script>
+  <script src="../js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>

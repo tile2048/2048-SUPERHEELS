@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2048 SuperHeels — shoe tile puzzle</title>
+  <meta name="description" content="Play 2048 SuperHeels: merge matching shoes, climb from a blue ballet flat to the rainbow platform mule, and keep the board from filling up.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-SUPERHEELS/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-SUPERHEELS/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-SUPERHEELS/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-SUPERHEELS/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 SuperHeels — shoe tile puzzle">
+  <meta property="og:description" content="Play 2048 SuperHeels: merge matching shoes, climb from a blue ballet flat to the rainbow platform mule, and keep the board from filling up.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-SUPERHEELS/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 SuperHeels",
+    "inLanguage": "en",
+    "url": "https://tile2048.github.io/2048-SUPERHEELS/",
+    "description": "A shoe-shop version of the 2048 sliding tile puzzle: merge equal pairs to climb from a blue ballet flat to the rainbow platform mule."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><span>English</span> <a href="es/" hreflang="es" lang="es">Español</a></nav>
+
+    <div class="heading">
+      <div class="title-container">
+        <h1 class="title">2048 <small>SuperHeels</small></h1>
+      </div>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the <strong>SuperHeels!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Continue</a>
+          <a class="retry-button">Retry</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two shoes touch, they <strong>get better!</strong>
+    </p>
+    <p class="game-about">
+      A blue ballet flat opens the shelf at 2, and a rainbow platform mule closes it at 2048. The pairs in between: a green ankle-strap sandal, a fuchsia embroidered stiletto, a yellow platform pump, a leopard-print pump, a black patent sandal, a polka-dot pump, a blue strappy sandal, a green glitter lace-up and a houndstooth platform heel. Slide the 4×4 shelf with the arrow keys or a swipe; two identical pairs become the next style and add points. Leave a few squares empty and plan ahead, because a full board with no matching pair ends the spree. The rainbow mule is the pair to reach.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Tile Legend:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="style/img/2.jpg" alt="blue ballet flat"></div></div>
+        <p>blue ballet flat</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="style/img/4.jpg" alt="green ankle-strap sandal"></div></div>
+        <p>green ankle-strap sandal</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="style/img/8.jpg" alt="fuchsia embroidered stiletto"></div></div>
+        <p>fuchsia embroidered stiletto</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="style/img/16.jpg" alt="yellow platform pump"></div></div>
+        <p>yellow platform pump</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="style/img/32.jpg" alt="leopard-print pump"></div></div>
+        <p>leopard-print pump</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="style/img/64.jpg" alt="black patent sandal"></div></div>
+        <p>black patent sandal</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="style/img/128.jpg" alt="polka-dot pump"></div></div>
+        <p>polka-dot pump</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="style/img/256.jpg" alt="blue strappy sandal"></div></div>
+        <p>blue strappy sandal</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="style/img/512.jpg" alt="green glitter lace-up"></div></div>
+        <p>green glitter lace-up</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="style/img/1024.jpg" alt="houndstooth platform heel"></div></div>
+        <p>houndstooth platform heel</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="style/img/2048.jpg" alt="rainbow platform mule"></div></div>
+        <p>rainbow platform mule</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Note:</strong> A fan-made variant of 2048, the original game by Gabriele Cirulli.
+    </p>
+    <hr>
+    <p class="credits">
+      Heels images by <a href="http://www.heels.com/" title="Women's Shoes, Dress Shoes, High Heels, Women's Boots, Evening Shoes, Heels.com">Heels.com</a>.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The Spanish page sets ../ and its own words.
+    window.GAME_ROOT = "";
+
+    // Text that only appears once a game is running, in the language of this page.
+    // Names are written in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "You win!",
+      "game-over": "Game over!",
+      "tweet1": "I scored \"",
+      "tweet2": "\" at 2048-SuperHeels #2048game",
+      "2": "blue ballet flat",
+      "4": "green ankle-strap sandal",
+      "8": "fuchsia embroidered stiletto",
+      "16": "yellow platform pump",
+      "32": "leopard-print pump",
+      "64": "black patent sandal",
+      "128": "polka-dot pump",
+      "256": "blue strappy sandal",
+      "512": "green glitter lace-up",
+      "1024": "houndstooth platform heel",
+      "2048": "rainbow platform mule",
+      "p0": "blue ballet flat",
+      "p2": "blue ballet flat",
+      "p4": "green ankle-strap sandal",
+      "p8": "fuchsia embroidered stiletto",
+      "p16": "yellow platform pump",
+      "p32": "leopard-print pump",
+      "p64": "black patent sandal",
+      "p128": "polka-dot pump",
+      "p256": "blue strappy sandal",
+      "p512": "green glitter lace-up",
+      "p1024": "houndstooth platform heel",
+      "p2048": "rainbow platform mule"
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "p" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>
